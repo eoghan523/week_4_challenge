@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My ToDo List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <input type="text" placeholder="Search tasks..." class="search-bar">
+            <div class="user-avatar">
+                <img src="https://i.pravatar.cc/50?u=student" alt="User Avatar">
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Completed</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2>Task List</h2>
+            <div>
+                <input type="text" id="taskInput" placeholder="Input Task Description">
+                <button id="addTask">Add Task</button>
+            </div>
+            <table class="task-table">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Task</th>
+                        <th>Date Created</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="taskTableBody">
+                    <!-- New tasks displayed here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
